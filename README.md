@@ -1,9 +1,8 @@
 # Dialyzer PLTs for Elixir on Travis CI
 
 The persistent lookup tables in this repository were generated for various
-versions of Elixir and OTP releases.
-
-The file format is: `elixir-#{elixir_version}_#{otp_version}`.
+versions of Elixir and OTP releases.  The file format is: 
+`elixir-#{elixir_version}_#{otp_version}`.
 
 ## Sample .travis.yml
 
@@ -27,3 +26,8 @@ script:
 
 Where `_build/test/lib/$YOUR_PROJECT_NAME/ebin` is the location of your compiled
 BEAM files.
+
+## Generate Your Own
+The tool used to build these PLTs is also available on Github:
+
+<https://github.com/danielberkompas/travis_elixir_plt_generator>
